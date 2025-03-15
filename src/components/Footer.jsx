@@ -61,10 +61,10 @@ export default function Footer() {
     
     return (
         <footer ref={containerRef} className="relative mt-[-100vh] overflow-y-clip overflow-x-clip">
-            <motion.div style={{ x: imageLeftTransform }} className="absolute bottom-0 left-0 h-full max-h-[400px]">
+            <motion.div style={{ x: imageLeftTransform }} className="absolute bottom-0 left-0 h-full max-h-[280px] md:max-h-[400px]">
                 <img src="/images/iridescent_asset_7.jpg" alt="" className="h-full w-auto -translate-x-1/2" />
             </motion.div>
-            <motion.div style={{ x: imageRightTransform }} className="absolute bottom-0 right-0 h-full max-h-[400px]">
+            <motion.div style={{ x: imageRightTransform }} className="absolute bottom-0 right-0 h-full max-h-[280px] md:max-h-[400px]">
                 <img src="/images/iridescent_asset_9.jpeg" alt="" className="blur-sm h-full w-auto translate-y-1/4 translate-x-1/3" />
             </motion.div>
             <div className="h-screen"></div>
