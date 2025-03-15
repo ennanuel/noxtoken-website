@@ -37,7 +37,7 @@ function CTAButton({ parentIndex }) {
             transition={{ duration: 2, ease: EASE, delay: (parentIndex / 25) }} 
             className="relative inline-flex items-center mr-6"
         >
-            <button className="-mb-2 lg:-mb-3 flex h-12 md:h-14 w-full rounded-full border border-white/20">
+            <button className="-mb-2 lg:-mb-3 flex h-12 md:h-14 w-full rounded-full border border-white/20 transition-[background-color] duration-300 hover:bg-white/10">
                 <span className="flex-1 flex items-center justify-center pl-6 pr-4 text-sm font-poppins font-light tracking-tight whitespace-nowrap">Get started</span>
                 <span className="flex items-center justify-center w-12 md:w-14 aspect-square rounded-full border border-white/50 bg-white/5">
                     <HiArrowLongRight size={20} />
