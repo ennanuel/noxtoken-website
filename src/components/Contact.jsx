@@ -34,13 +34,13 @@ export default function Contact() {
     }
 
     return (
-        <section className="relative py-20 mt-[120px] px-4 md:px-6 flex h-screen">
+        <section className="relative py-20 mt-[120px] px-4 sm:px-6 flex h-screen">
             <div 
                 onMouseMove={handleMouseMove} 
                 onMouseOut={resetImagePosition} 
-                className="flex-1 rounded-[30px] relative border border-white/20 bg-black overflow-clip"
+                className="flex-1 rounded-[32px] p-6 sm:p-6 relative border border-white/20 bg-black overflow-clip"
             >
-                <span className="absolute z-[2] top-6 left-6 px-6 flex items-center justify-center w-fit h-10 rounded-full text-white/50 border border-white/20 lowercase text-sm">
+                <span className="px-6 flex items-center justify-center w-fit h-10 rounded-full text-white/50 border border-white/20 lowercase text-sm">
                     <span className="flex items-center justify-center overflow-hidden -mt-1">
                         <motion.span 
                             initial={{ y: '100%' }} 
@@ -64,15 +64,15 @@ export default function Contact() {
                         className="w-full h-full object-contain duration-500 ease-[cubic-bezier(.3,_1,_.16,_1)]"
                     />
                 </motion.div>
-                <div className="relative bg-black/50 backdrop-blur-sm hover:backdrop-blur-md transition-[backdrop-filter] duration-300 w-full h-full flex flex-col items-center justify-center gap-2 p-10 py-20">
-                    <div className="flex items-center gap-2 text-white/80">
-                        <FaStaylinked size={32} />
-                        <div className="flex flex-col">
-                            <span className="text-xl tracking-tighter font-bold">NoxCoin</span>
-                            <span className="uppercase text-[.6rem] font-poppins font-light text-center">Crypto</span>
+                <div className="flex-1 relative bg-black/50 backdrop-blur-sm hover:backdrop-blur-md transition-[backdrop-filter] duration-300 w-full h-full flex flex-col items-center justify-center gap-2 px-0 sm:px-10 py-12 sm:py-20">
+                    <div className="flex flex-col items-center justify-center text-white/80">
+                        <div className="flex items-center gap-2">
+                            <FaStaylinked size={20} />
+                            <span className="text-xl tracking-tighter font-semibold">NoxCoin</span>
                         </div>
+                        <span className="uppercase text-[.6rem] font-poppins font-light text-center">Crypto</span>
                     </div>
-                    <h2 className="mt-10 text-center text-4xl mb-10 md:mb-0 text-[3.5rem] md:leading-[4.2rem] font-light tracking-tighter">
+                    <h2 className="mt-10 text-center text-4xl mb-10 md:mb-0 md:text-[3.5rem] md:leading-[4.2rem] font-light tracking-tighter">
                         {
                             "Want to integrate with NoxCoin?"
                                 .split(" ")
@@ -103,7 +103,7 @@ export default function Contact() {
                                 ))
                         }
                     </h2>
-                    <p className="text-sm text-center text-white/60 tracking-tight">
+                    <p className="mt-4 text-sm text-center text-white/60 tracking-tight">
                         {
                             "Contact us to find out how we can create liquidity for your product."
                                 .split(" ")
@@ -125,9 +125,9 @@ export default function Contact() {
                         transition={{ duration: 1, ease: EASE }}
                         viewport={{ once: true }}
                     >
-                        <button className="mt-10 items-center justify-center flex rounded-full border border-white/20 text-white/80">
+                        <button className="group mt-10 items-center justify-center flex rounded-full border border-white/20 text-white/80 transition-[background-color] duration-300 hover:text-white hover:bg-white/10">
                             <span className="text-sm relative font-poppins tracking-tight pl-6 pr-4">Contact us</span>
-                            <span className="w-12 md:w-14 aspect-square rounded-full border border-white/40 flex items-center justify-center rounded-full bg-white/10">
+                            <span className="w-12 md:w-14 aspect-square rounded-full border border-white/40 flex items-center justify-center bg-white/10">
                                 <VscSend size={18} className="relative" />
                             </span>
                         </button>
