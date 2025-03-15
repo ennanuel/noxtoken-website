@@ -116,7 +116,7 @@ export default function About() {
                             whileInView={{ y: 0 }} 
                             transition={{ duration: 1, ease: EASE }} 
                             viewport={{ once: true }} 
-                            className="pl-4 w-fit flex items-center justify-center gap-2 rounded-full overflow-hidden border border-white/40 text-white"
+                            className="pl-4 w-fit flex items-center justify-center gap-2 rounded-full overflow-hidden border border-white/40 text-white transition-[background-color] duration-300 hover:bg-white/10"
                         >
                             <span className="text-xs relative font-poppins tracking-tight">Discover more</span>
                             <span className="relative border border-white/60 flex items-center justify-center w-12 aspect-square rounded-full bg-white/10">

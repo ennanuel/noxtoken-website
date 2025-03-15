@@ -92,7 +92,7 @@ export default function Header() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 2, ease: EASE, delay: .3 }}
-                        className="flex items-center justify-center px-6 h-10 rounded-full border border-white/40">
+                        className="flex items-center justify-center px-6 h-10 rounded-full border border-white/40 transition-[background-color] duration-300 hover:bg-white/10">
                         <span className="text-xs font-poppins tracking-tight text-white/80">Login</span>
                     </motion.button>
                     <motion.button 
@@ -104,7 +104,7 @@ export default function Header() {
                     </motion.button>
                 </div>
             </div>
-            <div className="relative mx-auto max-w-[var(--max-width)] w-full flex items-center justify-between lg:hidden flex py-4 px-4 md:px-6">
+            <div className="relative mx-auto max-w-[var(--max-width)] w-full lg:hidden flex items-center justify-between py-4 px-4 md:px-6">
                 <motion.div 
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
